@@ -1,0 +1,21 @@
+.NotFoundContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #303032;
+}
+
+.NotFoundTitle {
+  color: blueviolet;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.NotFoundButton {
+  background-color: blueviolet;
+  position: absolute;
+  bottom: 60px;
+}
