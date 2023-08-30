@@ -21,7 +21,8 @@ const ToDo = () => {
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/todos/1')
       .then((response) => response.json())
-      .then((data) => dispatch(addTodo(data)));
+      .then((data) => dispatch(addTodo(data)))
+      .catch((error) => console.log(error));
   }, [dispatch]);
 
   const todo = useSelector((state) => state.todo);
