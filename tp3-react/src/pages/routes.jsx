@@ -15,10 +15,10 @@ function Routes() {
           path: '',
           element: <Dashboard />,
         },
+        { path: 'todo', element: <ToDo /> },
+        { path: 'fetchlist', element: <FetchList /> },
       ],
     },
-    { path: '/todo', element: <ToDo /> },
-    { path: '/fetchlist', element: <FetchList /> },
 
     { path: '/404', element: <NotFound /> },
     { path: '*', element: <Navigate to='/404' replace /> },

@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   todo: [],
+  loading: false,
 };
 
 export const todoSlice = createSlice({
@@ -25,9 +26,18 @@ export const todoSlice = createSlice({
       });
       console.log(state.todo);
     },
+    loading: (state) => {
+      state.loading = true;
+    },
   },
 });
 
-export const { setIdTodo, addTodo, changeStatus, changeTodo, deleteTodo } =
-  todoSlice.actions;
+export const {
+  setIdTodo,
+  addTodo,
+  changeStatus,
+  changeTodo,
+  deleteTodo,
+  loading,
+} = todoSlice.actions;
 export default todoSlice.reducer;
